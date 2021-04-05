@@ -7,7 +7,7 @@ Features:
 * Calls a joke API to get a random joke
 * Passes the 'joke' to a text-to-speech API
 * User presses the button "Tell me a Joke"
-* Get a random joke in audio form back
+* Gets a random joke in audio form back
 
 APIs: <br>
 [Joke API](https://jokeapi.dev/) <br>
