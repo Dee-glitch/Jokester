@@ -11,4 +11,4 @@ Features:
 
 APIs: <br>
 [Joke API](https://jokeapi.dev/) <br>
-[Text-to-speech API](http://www.voicerss.org/)
+[VoiceRSS API](http://www.voicerss.org/)
