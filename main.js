@@ -23,7 +23,7 @@ function tellMe(joke) {
   async function getJokes() {
     let joke = '';
     const apiUrl =
-      "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,political,racist,sexist,explicit";
+      "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,political,racist,sexist,explicit";
     try {
       const response = await fetch(apiUrl);
       const data = await response.json();
