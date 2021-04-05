@@ -1,0 +1,15 @@
+Jokey!
+* A robot that tells you a joke!
+* Grabs jokes from a joke API
+* feed text into the joke API, and get audio in return
+* Gives back an audible joke
+
+Must-haves
+*
+*
+*
+
+Good to haves
+*
+*
+*

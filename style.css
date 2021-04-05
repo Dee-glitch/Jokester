@@ -1,0 +1,76 @@
+/* robotgif from https://giphy.com/gifs/O2UK-o2-o2bubl-bubl-3TdV1b87lcbv3SDoa3 */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vW;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url('./robot.gif');
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: white;
+  background: #1d1d3b;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+button:hover {
+  filter: brightness(90%);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+footer {
+	display: flex;
+	flex-direction: row-reverse;
+  justify-content: space-between;
+  position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: black;
+}
+
+h6{
+  margin-right: 50px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .container {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  button {
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+  }
+}

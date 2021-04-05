@@ -1,0 +1,27 @@
+		The interview
+At the end of the module you will have a mock tech interview as the test for this module. The structure of these interviews are generally as follows:
+
+* You will be asked to share your screen and demo the project. Make it short, only a couple of minutes.
+* We will ask you to take a look at the code and explain the folder structure of the project (everything in the 'src' folder)
+* We will then ask you what features you helped build.
+* One of these features will be picked and we will ask you to explain how you implemented it by walking through the code.
+* On the way we will ask you about certain lines of code. Questions like: 'What does this line do?', 'What would happen if I removed this line/piece of code?', 'Why did you use a switch statement here?', etc.
+* In the end we will pick a feature that your group did not implement and ask you to broadly explain what needs to be done to implement that feature.
+
+		To prepare yourself best, here are some tips:
+
+* Practice the demonstration of your project, make sure it is short and concise
+* Be able to share your screen and have your project open locally
+* Go through the code of the features you built and make sure you understand what it is doing
+* Look at the other features in the project repository and get an idea of what is needed to implement them
+
+		Project requirements
+* The app needs to be a single page application. That means only one index.html file and JavaScript needs to update the html using DOM manipulation.
+* The app needs to interact with an API to grab data.
+* The app needs to have loading/error handling for the interaction with the API.
+* The app needs some user interaction such that you need to grab different data from the API.
+
+
+ 		Description
+A Text to Voice-Based Joke Teller to Read out jokes to you :)
+project uses a Joke API to fetch a programming joke then it uses a Text To Speech API to read out the fetched jokes to user.
