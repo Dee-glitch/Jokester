@@ -51,16 +51,16 @@ button:disabled {
 }
 
 footer {
-	display: flex;
-	flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   position: absolute;
-	bottom: 0;
-	width: 100%;
-	color: black;
+  bottom: 0;
+  width: 100%;
+  color: black;
 }
 
-h6{
+h6 {
   margin-right: 50px;
 }
 
