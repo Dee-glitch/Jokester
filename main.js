@@ -22,16 +22,17 @@ async function getJokes() {
     const apiUrl =
       "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit";
     const response = await fetch(apiUrl);
-    const data = await response.json();
-    if (data.setup) {
+    if(response.ok) {
+      const data = await response.json();
+      if (data.setup) {
         joke = `${data.setup} ... ${data.delivery}`;
-    } else {
-        joke = data.joke;
+      } else {
+          joke = data.joke;
+      }
+      
+      tellMe(joke);
+      toggleBtn();
     }
-    
-    tellMe(joke);
-    toggleBtn();
-
   } catch (error) {
       document.body.textContent = error.message;
   }
