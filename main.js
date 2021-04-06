@@ -1,8 +1,14 @@
-const button = document.querySelector('button');
+const buttons = document.querySelectorAll('.btn');
+const prog = document.getElementById('progBtn');
+const misc = document.getElementById("miscBtn");
+const spooky = document.getElementById("spookyBtn");
 
 // Disable/enable button
 function toggleBtn() {
-  button.disabled = !button.disabled;
+  buttons.forEach((button) => {
+    button.disabled = !button.disabled;
+  })
+  
 }
 
 // Passing joke to API
@@ -15,13 +21,14 @@ function tellMe(joke) {
 }
 
 // Get jokes from joke API
-async function getJokes() {
+async function getJokes(jokeCategory) {
   let joke = '';
   
   try {
     const apiUrl =
-      "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit";
+      `https://v2.jokeapi.dev/joke/${jokeCategory}?blacklistFlags=nsfw,religious,political,racist,sexist,explicit`;
     const response = await fetch(apiUrl);
+    
     if(response.ok) {
       const data = await response.json();
       if (data.setup) {
@@ -33,10 +40,19 @@ async function getJokes() {
       tellMe(joke);
       toggleBtn();
     }
+
   } catch (error) {
       document.body.textContent = error.message;
   }
 }
 
-button.addEventListener('click', getJokes);
+prog.addEventListener('click', () => {
+  getJokes('Programming')
+});
+misc.addEventListener("click", () => {
+  getJokes('Miscellaneous')
+});
+spooky.addEventListener("click", () => {
+  getJokes('Spooky')
+});
 
