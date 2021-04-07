@@ -50,6 +50,28 @@ button:disabled {
   filter: brightness(30%);
 }
 
+.error {
+  font-size: 25px;
+  color: red;
+  background: url(./sad-robot.jpg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.loader {
+  display: none;
+  z-index: 1;
+  background: rgba(255,255,255, 0.8);
+}
+  
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 footer {
   display: flex;
   flex-direction: row-reverse;
@@ -77,5 +99,10 @@ h6 {
     box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
     margin: 10px;
     height: 110px;
+  }
+
+  .error {
+    background: url(./sad-robot.jpg);
+    background-size: cover;
   }
 }
